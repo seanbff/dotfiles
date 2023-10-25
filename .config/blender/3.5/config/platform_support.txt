@@ -1,0 +1,1 @@
+{Intel/Mesa Intel(R) UHD Graphics 600 (GLK 2)/4.6 (Core Profile) Mesa 23.0.1}=SUPPORTED

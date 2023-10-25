@@ -1,0 +1,635 @@
+[2023-10-24 22:55:28.210] [1882] (engine.cpp:315): Created native Engine, time: Tue Oct 24 22:55:28 2023 EDT, logPath: /home/sl/.config/discord/0.0.31/modules/discord_voice/, logLevel: 2
+[2023-10-24 22:55:28.230] [1882] (audio_processing_impl.cc:295): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[2023-10-24 22:55:28.230] [1882] (audio_processing_impl.cc:304): Denormal disabler: supported
+[2023-10-24 22:55:28.230] [1882] (audio_processing_impl.cc:511): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 0, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
+[2023-10-24 22:55:28.231] [1882] (audio_device_buffer.cc:66): AudioDeviceBuffer::ctor
+[2023-10-24 22:55:28.232] [1882] (audio_device_impl.cc:143): current platform is Linux
+[2023-10-24 22:55:28.232] [1882] (audio_device_impl.cc:162): CreatePlatformSpecificObjects
+[2023-10-24 22:55:28.232] [1882] (audio_device_impl.cc:991): PlatformAudioLayer
+[2023-10-24 22:55:28.232] [1882] (audio_device_impl.cc:298): PulseAudio support is enabled.
+[2023-10-24 22:55:28.232] [1882] (audio_device_impl.cc:303): Linux PulseAudio APIs will be utilized
+[2023-10-24 22:55:28.232] [1882] (audio_device_impl.cc:344): AttachAudioBuffer
+[2023-10-24 22:55:28.232] [1882] (audio_device_buffer.cc:183): SetRecordingSampleRate(0)
+[2023-10-24 22:55:28.232] [1882] (audio_device_buffer.cc:189): SetPlayoutSampleRate(0)
+[2023-10-24 22:55:28.232] [1882] (audio_device_buffer.cc:203): SetRecordingChannels(0)
+[2023-10-24 22:55:28.232] [1882] (audio_device_buffer.cc:209): SetPlayoutChannels(0)
+[2023-10-24 22:55:28.232] [1882] (audio_device_impl.cc:354): ActiveAudioLayer
+[2023-10-24 22:55:28.232] [1882] (audio_device_buffer.cc:66): AudioDeviceBuffer::ctor
+[2023-10-24 22:55:28.232] [1882] (audio_device_impl.cc:143): current platform is Linux
+[2023-10-24 22:55:28.232] [1882] (audio_device_impl.cc:162): CreatePlatformSpecificObjects
+[2023-10-24 22:55:28.232] [1882] (audio_device_impl.cc:991): PlatformAudioLayer
+[2023-10-24 22:55:28.232] [1882] (audio_device_impl.cc:298): PulseAudio support is enabled.
+[2023-10-24 22:55:28.233] [1882] (audio_device_impl.cc:303): Linux PulseAudio APIs will be utilized
+[2023-10-24 22:55:28.233] [1882] (audio_device_impl.cc:344): AttachAudioBuffer
+[2023-10-24 22:55:28.233] [1882] (audio_device_buffer.cc:183): SetRecordingSampleRate(0)
+[2023-10-24 22:55:28.233] [1882] (audio_device_buffer.cc:189): SetPlayoutSampleRate(0)
+[2023-10-24 22:55:28.233] [1882] (audio_device_buffer.cc:203): SetRecordingChannels(0)
+[2023-10-24 22:55:28.233] [1882] (audio_device_buffer.cc:209): SetPlayoutChannels(0)
+[2023-10-24 22:55:28.233] [1882] (audio_processing_impl.cc:295): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[2023-10-24 22:55:28.233] [1882] (audio_processing_impl.cc:304): Denormal disabler: supported
+[2023-10-24 22:55:28.233] [1882] (audio_engine.cpp:528): Creating audio engine: standard
+[2023-10-24 22:55:28.233] [1882] (audio_device_impl.cc:364): Init
+[2023-10-24 22:55:28.247] [1882] (audio_device_impl.cc:364): Init
+[2023-10-24 22:55:28.253] [1882] (audio_coding.cpp:148): Using software Opus decoder
+[2023-10-24 22:55:28.253] [1882] (audio_coding.cpp:165): Using software Opus encoder
+[2023-10-24 22:55:28.253] [1882] (audio_device_impl.cc:895): RegisterAudioCallback
+[2023-10-24 22:55:28.253] [1882] (audio_device_impl.cc:547): SetMicrophoneVolume(100)
+[2023-10-24 22:55:28.253] [1882] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-10-24 22:55:28.253] [1882] (audio_device_impl.cc:895): RegisterAudioCallback
+[2023-10-24 22:55:28.253] [1882] (audio_engine.cpp:189): Setting audio input device: 'default'
+[2023-10-24 22:55:28.253] [1882] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-10-24 22:55:28.253] [1882] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-10-24 22:55:28.253] [1882] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2023-10-24 22:55:28.254] [1882] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2023-10-24 22:55:28.255] [1882] (audio_mixer_manager_pulse_linux.cc:429): input device index has not been set
+[2023-10-24 22:55:28.255] [1882] (audio_device_impl.cc:578): SetStereoRecording(0)
+[2023-10-24 22:55:28.255] [1882] (audio_device_buffer.cc:203): SetRecordingChannels(1)
+[2023-10-24 22:55:28.255] [1882] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-10-24 22:55:28.255] [1882] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2023-10-24 22:55:28.255] [1882] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-10-24 22:55:28.255] [1882] (audio_engine.cpp:206): Setting audio output device: 'default'
+[2023-10-24 22:55:28.255] [1882] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2023-10-24 22:55:28.255] [1882] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2023-10-24 22:55:28.257] [1882] (audio_device_impl.cc:619): output: 1
+[2023-10-24 22:55:28.257] [1882] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2023-10-24 22:55:28.257] [1882] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2023-10-24 22:55:28.257] [1882] (audio_device_impl.cc:911): BuiltInAECIsAvailable
+[2023-10-24 22:55:28.257] [1882] (audio_device_generic.cc:32): BuiltInAECIsAvailable: Not supported on this platform
+[2023-10-24 22:55:28.257] [1882] (audio_device_impl.cc:914): output: 0
+[2023-10-24 22:55:28.257] [1882] (audio_processing_impl.cc:511): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
+[2023-10-24 22:55:28.261] [1882] (transparent_mode.cc:239): AEC3 Transparent Mode: Legacy
+[2023-10-24 22:55:28.261] [1882] (echo_canceller3.cc:793): AEC3 created with sample rate: 16000 Hz, num render channels: 1, num capture channels: 1
+[2023-10-24 22:55:28.261] [1882] (audio_processing_impl.cc:511): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
+[2023-10-24 22:55:28.261] [1882] (clipping_predictor.cc:357): [agc] Clipping prediction disabled.
+[2023-10-24 22:55:28.261] [1882] (agc_manager_direct.cc:500): [agc] analog controller enabled: yes
+[2023-10-24 22:55:28.261] [1882] (agc_manager_direct.cc:503): [agc] Min mic level: 12 (overridden: no)
+[2023-10-24 22:55:28.261] [1882] (agc_manager_direct.cc:507): [agc] Startup min volume: 0
+[2023-10-24 22:55:28.262] [1882] (captured_audio_processor.cpp:119): SetNoiseCancellation: 0
+[2023-10-24 22:55:28.262] [1882] (audio_processing_impl.cc:511): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
+[2023-10-24 22:55:28.262] [1882] (field_trial.cc:141): Setting field trial string:WebRTC-Audio-NetEqDecisionLogicConfig/reinit_after_expands:100/
+[2023-10-24 22:55:28.892] [1882] (audio_engine.cpp:189): Setting audio input device: 'default'
+[2023-10-24 22:55:28.892] [1882] (audio_device_impl.cc:826): RecordingIsInitialized
+[2023-10-24 22:55:28.892] [1882] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-10-24 22:55:28.892] [1882] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-10-24 22:55:28.892] [1882] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2023-10-24 22:55:28.892] [1882] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2023-10-24 22:55:28.893] [1882] (audio_mixer_manager_pulse_linux.cc:429): input device index has not been set
+[2023-10-24 22:55:28.893] [1882] (audio_device_impl.cc:578): SetStereoRecording(0)
+[2023-10-24 22:55:28.893] [1882] (audio_device_buffer.cc:203): SetRecordingChannels(1)
+[2023-10-24 22:55:28.893] [1882] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-10-24 22:55:28.893] [1882] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2023-10-24 22:55:28.893] [1882] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-10-24 22:55:28.894] [1882] (audio_engine.cpp:206): Setting audio output device: 'default'
+[2023-10-24 22:55:28.894] [1882] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2023-10-24 22:55:28.894] [1882] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2023-10-24 22:55:28.895] [1882] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2023-10-24 22:55:28.895] [1882] (audio_device_impl.cc:619): output: 1
+[2023-10-24 22:55:28.895] [1882] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2023-10-24 22:55:28.895] [1882] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2023-10-24 22:55:28.895] [1882] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-10-24 22:55:28.895] [1882] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2023-10-24 22:55:28.896] [1882] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-10-24 22:55:28.941] [1845] (discord.cpp:744): JS console: ["%c[default]","[BUILD INFO] Release Channel: stable, Build Number: 240237, Version Hash: a1ba59429c96e3b159aa308b3c9f8a73d90e8b4b"]
+[2023-10-24 22:55:29.240] [1845] (discord.cpp:744): JS console: ["%c[CloudSyncUtils]","CloudSync is not supported on this platform"]
+[2023-10-24 22:55:29.446] [1845] (discord.cpp:744): JS console: ["%c[default]","[NATIVE INFO] host 0.0.31, modules: discord_desktop_core: 1, discord_erlpack: 1, discord_spellcheck: 1, discord_utils: 1, discord_voice: 1, discord_krisp: 1, discord_game_utils: 1, discord_rpc: 1, build: null"]
+[2023-10-24 22:55:29.468] [1882] (audio_engine.cpp:189): Setting audio input device: 'default'
+[2023-10-24 22:55:29.468] [1882] (audio_device_impl.cc:826): RecordingIsInitialized
+[2023-10-24 22:55:29.468] [1882] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-10-24 22:55:29.468] [1882] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-10-24 22:55:29.468] [1882] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2023-10-24 22:55:29.469] [1882] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2023-10-24 22:55:29.471] [1882] (audio_mixer_manager_pulse_linux.cc:429): input device index has not been set
+[2023-10-24 22:55:29.471] [1882] (audio_device_impl.cc:578): SetStereoRecording(0)
+[2023-10-24 22:55:29.471] [1882] (audio_device_buffer.cc:203): SetRecordingChannels(1)
+[2023-10-24 22:55:29.471] [1882] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-10-24 22:55:29.471] [1882] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2023-10-24 22:55:29.471] [1882] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-10-24 22:55:29.471] [1882] (audio_engine.cpp:206): Setting audio output device: 'default'
+[2023-10-24 22:55:29.471] [1882] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2023-10-24 22:55:29.471] [1882] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2023-10-24 22:55:29.476] [1882] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2023-10-24 22:55:29.477] [1882] (audio_device_impl.cc:619): output: 1
+[2023-10-24 22:55:29.477] [1882] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2023-10-24 22:55:29.477] [1882] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2023-10-24 22:55:29.503] [1845] (discord.cpp:744): JS console: ["Initializing krisp module"]
+[2023-10-24 22:55:30.334] [1845] (discord.cpp:744): JS console: ["%c[Spellchecker]","sh is not a valid locale."]
+[2023-10-24 22:55:30.852] [1845] (discord.cpp:744): JS console: ["%c[Spellchecker]","Switching to en-US","(available)"]
+[2023-10-24 22:55:31.465] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-24 22:55:32.764] [1845] (discord.cpp:744): JS console: ["%c[RPCServer:WSS]","Starting on 6463"]
+[2023-10-24 22:55:32.837] [1845] (discord.cpp:744): JS console: ["%c[RPCServer:IPC]","Starting on /run/user/1000/discord-ipc-0"]
+[2023-10-24 22:55:32.867] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2023-10-24 22:55:32.868] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[FAST CONNECT] successfully took over websocket, state:","[object Object]"]
+[2023-10-24 22:55:32.868] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 1 ms"]
+[2023-10-24 22:55:34.780] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[READY] took 1912ms, as 843132f676380558fbd38b9616423ca5"]
+[2023-10-24 22:55:34.884] [1845] (discord.cpp:744): JS console: ["%c[Flux]","Dispatching CONNECTION_OPEN"]
+[2023-10-24 22:55:34.891] [1845] (discord.cpp:744): JS console: ["%c[DatabaseManager]","removing database (user: 141777941569732608, database: undefined)"]
+[2023-10-24 22:55:34.933] [1845] (discord.cpp:744): JS console: ["%c[NativeDispatchUtils]","Tried getting Dispatch instance before instantiated"]
+[2023-10-24 22:55:35.147] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 982671797705117716 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-10-24 22:55:35.239] [1845] (discord.cpp:744): JS console: ["%c[ConnectionStore]","Dispatched 1 messages in 426ms"]
+[2023-10-24 22:55:36.151] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[READY_SUPPLEMENTAL] took 3283ms"]
+[2023-10-24 22:55:37.210] [1845] (discord.cpp:744): JS console: ["%c[ConnectionStore]","Dispatched 3 messages in 165ms"]
+[2023-10-24 22:55:37.390] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 982671797705117716 isBefore:false isAfter:false"]
+[2023-10-24 22:55:39.376] [1882] (engine.cpp:761): Engine::SetClipBufferLength(0)
+[2023-10-24 22:55:56.455] [1845] (discord.cpp:744): JS console: ["%c[ConnectionStore]","Dispatched 1 messages in 102ms"]
+[2023-10-24 23:40:56.894] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 1127802008158621738 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-10-24 23:40:57.011] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/1127802007709822986/1127802008158621738"]
+[2023-10-24 23:40:58.057] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 1127802008158621738 isBefore:false isAfter:false"]
+[2023-10-24 23:41:01.804] [1845] (discord.cpp:744): JS console: ["%c[ComponentDispatchUtils]","ComponentDispatch.subscribe: Attempting to add a duplicate listener","POPOUT_CLOSE"]
+[2023-10-24 23:41:07.591] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/@me/936625905902714912"]
+[2023-10-24 23:41:07.613] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 936625905902714912 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-10-24 23:41:08.353] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 936625905902714912 isBefore:false isAfter:false"]
+[2023-10-24 23:41:14.458] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/@me/936625905902714912/1083187613193740320"]
+[2023-10-24 23:41:14.466] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 936625905902714912 between undefined and undefined. jump={\"messageId\":\"1083187613193740320\",\"flash\":true}"]
+[2023-10-24 23:41:14.638] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 51 messages for 936625905902714912 isBefore:false isAfter:false"]
+[2023-10-24 23:41:15.434] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/@me/936625905902714912/1083187613193740320"]
+[2023-10-24 23:41:15.438] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 936625905902714912 between undefined and undefined. jump={\"messageId\":\"1083187613193740320\",\"flash\":true}"]
+[2023-10-24 23:41:15.826] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 936625905902714912 between undefined and 1083210170403930123. jump=undefined"]
+[2023-10-24 23:41:16.137] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 936625905902714912 isBefore:false isAfter:true"]
+[2023-10-24 23:41:28.494] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 936625905902714912 between undefined and undefined. jump={\"present\":true}"]
+[2023-10-24 23:41:28.498] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/@me/936625905902714912"]
+[2023-10-24 23:41:28.672] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 936625905902714912 isBefore:false isAfter:false"]
+[2023-10-24 23:41:30.774] [1845] (discord.cpp:744): JS console: ["%c[discord_protos.discord_users.v1.FrecencyUserSettings]","Loading proto"]
+[2023-10-24 23:41:35.162] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","Replacing route with /channels/@me"]
+[2023-10-24 23:41:35.206] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/@me"]
+[2023-10-24 23:56:42.311] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/982656910127943720/982671797705117716"]
+[2023-10-24 23:57:56.531] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2023-10-24 23:57:57.545] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 1013 ms"]
+[2023-10-24 23:57:57.546] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUME] resuming session 843132f676380558fbd38b9616423ca5, seq: 1117"]
+[2023-10-24 23:57:57.646] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUMED] took 1114ms, replayed 1 events, new seq: 1118"]
+[2023-10-24 23:57:57.684] [1845] (discord.cpp:744): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2023-10-25 00:17:26.434] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 659858947896770590 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-10-25 00:17:26.553] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/647222689777582080/659858947896770590"]
+[2023-10-25 00:17:27.333] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 659858947896770590 isBefore:false isAfter:false"]
+[2023-10-25 00:17:33.838] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 659858947896770590 between 1166545700641853470 and undefined. jump=undefined"]
+[2023-10-25 00:17:34.108] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 659858947896770590 isBefore:true isAfter:false"]
+[2023-10-25 00:17:36.693] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 659858947896770590 between 1166181481949970442 and undefined. jump=undefined"]
+[2023-10-25 00:17:36.944] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 659858947896770590 isBefore:true isAfter:false"]
+[2023-10-25 00:17:52.298] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 659858947896770590 between 1165673010515165254 and undefined. jump=undefined"]
+[2023-10-25 00:17:52.605] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 659858947896770590 isBefore:true isAfter:false"]
+[2023-10-25 00:17:56.482] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 659858947896770590 between 1165438027636674581 and undefined. jump=undefined"]
+[2023-10-25 00:17:56.896] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 659858947896770590 isBefore:true isAfter:false"]
+[2023-10-25 00:18:02.392] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/1065291958328758352/1065313947739238520"]
+[2023-10-25 00:18:02.397] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 1065313947739238520 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-10-25 00:18:02.739] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 6 messages for 1065313947739238520 isBefore:false isAfter:false"]
+[2023-10-25 00:18:06.716] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 1164740167593107528 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-10-25 00:18:06.812] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/1164739541681307699/1164740167593107528"]
+[2023-10-25 00:18:07.122] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 0 messages for 1164740167593107528 isBefore:false isAfter:false"]
+[2023-10-25 00:18:16.903] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 811381899112742937 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-10-25 00:18:17.004] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/739254338232385588/811381899112742937"]
+[2023-10-25 00:18:17.319] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 811381899112742937 isBefore:false isAfter:false"]
+[2023-10-25 00:18:20.942] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 741054285013450793 between undefined and undefined. jump={\"isHighlight\":false,\"jumpType\":\"ANIMATED\"}"]
+[2023-10-25 00:18:21.024] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/739254338232385588/741054285013450793"]
+[2023-10-25 00:18:21.536] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 741054285013450793 isBefore:false isAfter:false"]
+[2023-10-25 00:18:23.402] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/739254338232385588/811381899112742937"]
+[2023-10-25 00:18:35.888] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 739254339100737548 between undefined and undefined. jump={\"isHighlight\":false,\"jumpType\":\"ANIMATED\"}"]
+[2023-10-25 00:18:35.937] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/739254338232385588/739254339100737548"]
+[2023-10-25 00:18:36.166] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 739254339100737548 isBefore:false isAfter:false"]
+[2023-10-25 00:18:47.284] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 825144729569591347 between undefined and undefined. jump={\"isHighlight\":false,\"jumpType\":\"ANIMATED\"}"]
+[2023-10-25 00:18:47.381] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/739254338232385588/825144729569591347"]
+[2023-10-25 00:18:47.581] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 825144729569591347 isBefore:false isAfter:false"]
+[2023-10-25 00:18:53.550] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/1065291958328758352/1065313947739238520"]
+[2023-10-25 00:19:15.647] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/982656910127943720/982671797705117716"]
+[2023-10-25 00:27:16.313] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/1164739541681307699/1164740167593107528"]
+[2023-10-25 00:27:27.525] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","Replacing route with /channels/1164739541681307699/1164739542151077889"]
+[2023-10-25 00:27:27.544] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 1164739542151077889 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-10-25 00:27:27.733] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 0 messages for 1164739542151077889 isBefore:false isAfter:false"]
+[2023-10-25 00:27:47.636] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 1164740161553301604 between undefined and undefined. jump={\"isHighlight\":false,\"jumpType\":\"ANIMATED\"}"]
+[2023-10-25 00:27:47.899] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 0 messages for 1164740161553301604 isBefore:false isAfter:false"]
+[2023-10-25 00:28:00.432] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 1164739542151077890 between undefined and undefined. jump={\"isHighlight\":false,\"jumpType\":\"ANIMATED\"}"]
+[2023-10-25 00:28:00.572] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/1164739541681307699/1164739542151077890"]
+[2023-10-25 00:28:00.764] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 0 messages for 1164739542151077890 isBefore:false isAfter:false"]
+[2023-10-25 00:28:08.766] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/982656910127943720/982671797705117716"]
+[2023-10-25 00:52:27.589] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 932149869030817882 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-10-25 00:52:28.796] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 932149869030817882 isBefore:false isAfter:false"]
+[2023-10-25 00:53:08.013] [1845] (discord.cpp:744): JS console: ["%c[discord_protos.discord_users.v1.PreloadedUserSettings]","Updating guildFolders with delay 20"]
+[2023-10-25 00:53:08.084] [1845] (discord.cpp:744): JS console: ["%c[discord_protos.discord_users.v1.PreloadedUserSettings]","Scheduling save from markDirty"]
+[2023-10-25 00:53:11.604] [1845] (discord.cpp:744): JS console: ["%c[discord_protos.discord_users.v1.PreloadedUserSettings]","Updating guildFolders with delay 20"]
+[2023-10-25 00:53:28.093] [1845] (discord.cpp:744): JS console: ["%c[discord_protos.discord_users.v1.PreloadedUserSettings]","Persisting proto"]
+[2023-10-25 00:53:30.826] [1845] (discord.cpp:744): JS console: ["%c[discord_protos.discord_users.v1.PreloadedUserSettings]","Updating guildFolders with delay 20"]
+[2023-10-25 00:53:30.879] [1845] (discord.cpp:744): JS console: ["%c[discord_protos.discord_users.v1.PreloadedUserSettings]","Scheduling save from markDirty"]
+[2023-10-25 00:53:50.305] [1845] (discord.cpp:744): JS console: ["%c[discord_protos.discord_users.v1.PreloadedUserSettings]","Updating guildFolders with delay 20"]
+[2023-10-25 00:53:50.880] [1845] (discord.cpp:744): JS console: ["%c[discord_protos.discord_users.v1.PreloadedUserSettings]","Persisting proto"]
+[2023-10-25 00:54:00.200] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 603723949586645005 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-10-25 00:54:00.307] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/603723949586644997/603723949586645005"]
+[2023-10-25 00:54:01.004] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 603723949586645005 isBefore:false isAfter:false"]
+[2023-10-25 01:31:16.630] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[ACK TIMEOUT] reconnecting in 1.10 seconds."]
+[2023-10-25 01:31:17.729] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2023-10-25 01:31:18.079] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 350 ms"]
+[2023-10-25 01:31:18.080] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUME] resuming session 843132f676380558fbd38b9616423ca5, seq: 2501"]
+[2023-10-25 01:31:18.181] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUMED] took 452ms, replayed 2 events, new seq: 2503"]
+[2023-10-25 01:31:18.216] [1845] (discord.cpp:744): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2023-10-25 01:39:36.007] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/1127802007709822986/1127802008158621738"]
+[2023-10-25 01:39:39.288] [1845] (discord.cpp:744): JS console: ["%c[ComponentDispatchUtils]","ComponentDispatch.subscribe: Attempting to add a duplicate listener","POPOUT_CLOSE"]
+[2023-10-25 01:39:44.367] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/@me/936625905902714912"]
+[2023-10-25 01:39:44.373] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 936625905902714912 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-10-25 01:39:44.722] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 936625905902714912 isBefore:false isAfter:false"]
+[2023-10-25 01:39:53.710] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/@me/936625905902714912/1083187613193740320"]
+[2023-10-25 01:39:53.714] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 936625905902714912 between undefined and undefined. jump={\"messageId\":\"1083187613193740320\",\"flash\":true}"]
+[2023-10-25 01:39:53.985] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 51 messages for 936625905902714912 isBefore:false isAfter:false"]
+[2023-10-25 01:40:05.545] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 936625905902714912 between undefined and 1083210170403930123. jump=undefined"]
+[2023-10-25 01:40:05.964] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 936625905902714912 isBefore:false isAfter:true"]
+[2023-10-25 01:40:07.977] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","Replacing route with /channels/@me"]
+[2023-10-25 01:40:08.025] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/@me"]
+[2023-10-25 02:29:47.487] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2023-10-25 02:29:47.860] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 345 ms"]
+[2023-10-25 02:29:47.861] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUME] resuming session 843132f676380558fbd38b9616423ca5, seq: 2895"]
+[2023-10-25 02:29:48.156] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUMED] took 641ms, replayed 1 events, new seq: 2896"]
+[2023-10-25 02:29:48.192] [1845] (discord.cpp:744): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2023-10-25 02:44:54.206] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/@me/1009570986766651402"]
+[2023-10-25 02:44:54.226] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 1009570986766651402 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-10-25 02:44:54.508] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 1009570986766651402 isBefore:false isAfter:false"]
+[2023-10-25 02:45:01.829] [1845] (discord.cpp:744): JS console: ["%c[CloudUpload.tsx]","Requesting upload url for upload113"]
+[2023-10-25 02:45:02.364] [1845] (discord.cpp:744): JS console: ["%c[CloudUpload.tsx]","Uploading upload113"]
+[2023-10-25 02:45:03.596] [1845] (discord.cpp:744): JS console: ["%c[CloudUploaderBase.tsx]","setUploadingTextForUI - total content: 24034035 bytes and 1 attachments for Uploader115"]
+[2023-10-25 02:45:05.711] [1845] (discord.cpp:744): JS console: ["%c[CloudUpload.tsx]","Upload complete for upload113"]
+[2023-10-25 02:45:07.196] [1845] (discord.cpp:744): JS console: ["%c[UploaderBase.tsx]","_handleComplete for Uploader115"]
+[2023-10-25 02:45:12.192] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","Replacing route with /channels/@me"]
+[2023-10-25 02:45:12.238] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/@me"]
+[2023-10-25 03:55:48.686] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2023-10-25 03:55:49.303] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 616 ms"]
+[2023-10-25 03:55:49.303] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUME] resuming session 843132f676380558fbd38b9616423ca5, seq: 3288"]
+[2023-10-25 03:55:49.596] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUMED] took 910ms, replayed 1 events, new seq: 3289"]
+[2023-10-25 03:55:49.632] [1845] (discord.cpp:744): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2023-10-25 04:49:00.761] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2023-10-25 04:49:01.890] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 1129 ms"]
+[2023-10-25 04:49:01.890] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUME] resuming session 843132f676380558fbd38b9616423ca5, seq: 3512"]
+[2023-10-25 04:49:01.984] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUMED] took 1223ms, replayed 1 events, new seq: 3513"]
+[2023-10-25 04:49:02.020] [1845] (discord.cpp:744): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2023-10-25 04:55:55.191] [10261] (region_latency_tester.cpp:72): Sending 5 latency test pings to region atlanta
+[2023-10-25 04:55:55.191] [10261] (region_latency_tester.cpp:72): Sending 5 latency test pings to region us-east
+[2023-10-25 04:55:55.191] [10261] (region_latency_tester.cpp:72): Sending 5 latency test pings to region newark
+[2023-10-25 04:55:55.191] [10261] (region_latency_tester.cpp:72): Sending 5 latency test pings to region us-south
+[2023-10-25 04:55:55.191] [10261] (region_latency_tester.cpp:72): Sending 5 latency test pings to region us-central
+[2023-10-25 04:55:55.233] [10261] (region_latency_tester.cpp:271): Average RTT for region atlanta is 19
+[2023-10-25 04:55:55.233] [10261] (region_latency_tester.cpp:271): Average RTT for region us-east is 33
+[2023-10-25 04:55:55.233] [10261] (region_latency_tester.cpp:271): Average RTT for region newark is 40
+[2023-10-25 04:55:55.233] [10261] (region_latency_tester.cpp:271): Average RTT for region us-south is 33
+[2023-10-25 04:55:55.233] [10261] (region_latency_tester.cpp:271): Average RTT for region us-central is 40
+[2023-10-25 06:08:57.632] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[ACK TIMEOUT] reconnecting in 2.23 seconds."]
+[2023-10-25 06:08:59.864] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2023-10-25 06:09:01.426] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 1561 ms"]
+[2023-10-25 06:09:01.426] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUME] resuming session 843132f676380558fbd38b9616423ca5, seq: 3751"]
+[2023-10-25 06:09:01.464] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUMED] took 1600ms, replayed 5 events, new seq: 3756"]
+[2023-10-25 06:09:01.497] [1845] (discord.cpp:744): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2023-10-25 06:27:07.770] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[ACK TIMEOUT] reconnecting in 1.19 seconds."]
+[2023-10-25 06:27:08.957] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2023-10-25 06:27:09.104] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 147 ms"]
+[2023-10-25 06:27:09.104] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUME] resuming session 843132f676380558fbd38b9616423ca5, seq: 3846"]
+[2023-10-25 06:27:09.137] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUMED] took 180ms, replayed 3 events, new seq: 3849"]
+[2023-10-25 06:27:09.173] [1845] (discord.cpp:744): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2023-10-25 06:35:14.667] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 1.04 seconds."]
+[2023-10-25 06:35:15.709] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2023-10-25 06:35:15.830] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 120 ms"]
+[2023-10-25 06:35:15.830] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUME] resuming session 843132f676380558fbd38b9616423ca5, seq: 3870"]
+[2023-10-25 06:35:15.866] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUMED] took 157ms, replayed 1 events, new seq: 3871"]
+[2023-10-25 06:35:15.903] [1845] (discord.cpp:744): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2023-10-25 06:52:45.830] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2023-10-25 06:52:46.746] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 916 ms"]
+[2023-10-25 06:52:46.747] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUME] resuming session 843132f676380558fbd38b9616423ca5, seq: 3902"]
+[2023-10-25 06:52:47.133] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUMED] took 1303ms, replayed 1 events, new seq: 3903"]
+[2023-10-25 06:52:47.168] [1845] (discord.cpp:744): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2023-10-25 07:07:43.994] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 1.55 seconds."]
+[2023-10-25 07:07:45.544] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2023-10-25 07:07:45.983] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 439 ms"]
+[2023-10-25 07:07:45.984] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUME] resuming session 843132f676380558fbd38b9616423ca5, seq: 3966"]
+[2023-10-25 07:07:46.024] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUMED] took 480ms, replayed 1 events, new seq: 3967"]
+[2023-10-25 07:07:46.061] [1845] (discord.cpp:744): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2023-10-25 07:25:22.400] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2023-10-25 07:25:24.042] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 1642 ms"]
+[2023-10-25 07:25:24.042] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUME] resuming session 843132f676380558fbd38b9616423ca5, seq: 4049"]
+[2023-10-25 07:25:24.123] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUMED] took 1723ms, replayed 1 events, new seq: 4050"]
+[2023-10-25 07:25:24.159] [1845] (discord.cpp:744): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2023-10-25 07:27:07.939] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 1.86 seconds."]
+[2023-10-25 07:27:09.796] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2023-10-25 07:27:09.904] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 107 ms"]
+[2023-10-25 07:27:09.904] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUME] resuming session 843132f676380558fbd38b9616423ca5, seq: 4068"]
+[2023-10-25 07:27:09.939] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUMED] took 143ms, replayed 3 events, new seq: 4071"]
+[2023-10-25 07:27:09.972] [1845] (discord.cpp:744): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2023-10-25 08:46:17.632] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[ACK TIMEOUT] reconnecting in 2.66 seconds."]
+[2023-10-25 08:46:20.311] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2023-10-25 08:46:21.800] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 1488 ms"]
+[2023-10-25 08:46:21.800] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUME] resuming session 843132f676380558fbd38b9616423ca5, seq: 4707"]
+[2023-10-25 08:46:21.834] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUMED] took 1522ms, replayed 1 events, new seq: 4708"]
+[2023-10-25 08:46:21.870] [1845] (discord.cpp:744): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2023-10-25 10:04:19.966] [1845] (discord.cpp:744): JS console: ["%c[ConnectionStore]","Dispatched 44 messages in 109ms"]
+[2023-10-25 11:08:58.972] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2023-10-25 11:09:00.190] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 1217 ms"]
+[2023-10-25 11:09:00.190] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUME] resuming session 843132f676380558fbd38b9616423ca5, seq: 6655"]
+[2023-10-25 11:09:00.357] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUMED] took 1384ms, replayed 1 events, new seq: 6656"]
+[2023-10-25 11:09:00.392] [1845] (discord.cpp:744): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2023-10-25 13:01:50.598] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 1.49 seconds."]
+[2023-10-25 13:01:52.087] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2023-10-25 13:01:52.942] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 855 ms"]
+[2023-10-25 13:01:52.942] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUME] resuming session 843132f676380558fbd38b9616423ca5, seq: 9803"]
+[2023-10-25 13:01:53.255] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUMED] took 1168ms, replayed 3 events, new seq: 9806"]
+[2023-10-25 13:01:53.289] [1845] (discord.cpp:744): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2023-10-25 13:07:37.215] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 1009570986766651402 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-10-25 13:07:37.890] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 1009570986766651402 isBefore:false isAfter:false"]
+[2023-10-25 13:07:41.020] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","Replacing route with /channels/@me"]
+[2023-10-25 13:07:41.059] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/@me"]
+[2023-10-25 13:07:41.878] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 1013657345076756620 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-10-25 13:07:42.214] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 1013657345076756620 isBefore:false isAfter:false"]
+[2023-10-25 13:07:49.040] [1845] (discord.cpp:744): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","[object Object]"]
+[2023-10-25 13:07:52.068] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","Replacing route with /channels/@me"]
+[2023-10-25 13:07:52.095] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/@me"]
+[2023-10-25 13:08:13.156] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/1127802007709822986/1127802008158621738"]
+[2023-10-25 13:08:16.984] [1845] (discord.cpp:744): JS console: ["%c[ComponentDispatchUtils]","ComponentDispatch.subscribe: Attempting to add a duplicate listener","POPOUT_CLOSE"]
+[2023-10-25 13:08:21.953] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/@me/936625905902714912"]
+[2023-10-25 13:08:21.983] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 936625905902714912 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-10-25 13:08:22.295] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 936625905902714912 isBefore:false isAfter:false"]
+[2023-10-25 13:08:32.684] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/@me/936625905902714912/1083187613193740320"]
+[2023-10-25 13:08:32.688] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 936625905902714912 between undefined and undefined. jump={\"messageId\":\"1083187613193740320\",\"flash\":true}"]
+[2023-10-25 13:08:33.010] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 51 messages for 936625905902714912 isBefore:false isAfter:false"]
+[2023-10-25 13:08:33.492] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/@me/936625905902714912/1083187613193740320"]
+[2023-10-25 13:08:33.497] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 936625905902714912 between undefined and undefined. jump={\"messageId\":\"1083187613193740320\",\"flash\":true}"]
+[2023-10-25 13:08:53.090] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 936625905902714912 between undefined and 1083210170403930123. jump=undefined"]
+[2023-10-25 13:08:53.282] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 936625905902714912 isBefore:false isAfter:true"]
+[2023-10-25 13:08:57.284] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","Replacing route with /channels/@me"]
+[2023-10-25 13:08:57.298] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/@me"]
+[2023-10-25 13:08:58.644] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/1127802007709822986/1127802008158621738"]
+[2023-10-25 13:09:01.175] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 1127941809042096228 between undefined and undefined. jump={\"isHighlight\":false,\"jumpType\":\"ANIMATED\"}"]
+[2023-10-25 13:09:01.286] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/1127802007709822986/1127941809042096228"]
+[2023-10-25 13:09:01.538] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 1127941809042096228 isBefore:false isAfter:false"]
+[2023-10-25 13:25:59.699] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 1067123232429310022 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-10-25 13:25:59.789] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/959115981769302036/1067123232429310022"]
+[2023-10-25 13:26:00.497] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 1067123232429310022 isBefore:false isAfter:false"]
+[2023-10-25 13:26:59.200] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 1.91 seconds."]
+[2023-10-25 13:27:01.112] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2023-10-25 13:27:01.693] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 581 ms"]
+[2023-10-25 13:27:01.694] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUME] resuming session 843132f676380558fbd38b9616423ca5, seq: 10488"]
+[2023-10-25 13:27:01.730] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUMED] took 617ms, replayed 2 events, new seq: 10490"]
+[2023-10-25 13:27:01.764] [1845] (discord.cpp:744): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2023-10-25 13:28:14.431] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 1.25 seconds."]
+[2023-10-25 13:28:15.681] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2023-10-25 13:28:16.413] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 732 ms"]
+[2023-10-25 13:28:16.413] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUME] resuming session 843132f676380558fbd38b9616423ca5, seq: 10514"]
+[2023-10-25 13:28:16.446] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUMED] took 765ms, replayed 1 events, new seq: 10515"]
+[2023-10-25 13:28:16.482] [1845] (discord.cpp:744): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2023-10-25 14:48:42.232] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-d.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2023-10-25 14:48:42.378] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-d.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 117 ms"]
+[2023-10-25 14:48:42.379] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUME] resuming session 843132f676380558fbd38b9616423ca5, seq: 12136"]
+[2023-10-25 14:48:42.418] [1845] (discord.cpp:744): JS console: ["%c[GatewaySocket]","[RESUMED] took 157ms, replayed 1 events, new seq: 12137"]
+[2023-10-25 14:48:42.455] [1845] (discord.cpp:744): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2023-10-25 15:01:00.195] [1845] (discord.cpp:744): JS console: ["%c[ConnectionStore]","Dispatched 5 messages in 121ms"]
+[2023-10-25 15:01:20.659] [1845] (discord.cpp:744): JS console: ["%c[ConnectionStore]","Dispatched 1 messages in 151ms"]
+[2023-10-25 15:13:18.537] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/1127802007709822986/1127941809042096228"]
+[2023-10-25 15:13:21.016] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/1127802007709822986/1127802008158621738"]
+[2023-10-25 15:13:24.678] [1845] (discord.cpp:744): JS console: ["%c[ComponentDispatchUtils]","ComponentDispatch.subscribe: Attempting to add a duplicate listener","POPOUT_CLOSE"]
+[2023-10-25 15:13:30.394] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/@me/936625905902714912"]
+[2023-10-25 15:13:30.403] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 936625905902714912 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-10-25 15:13:31.402] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 936625905902714912 isBefore:false isAfter:false"]
+[2023-10-25 15:13:38.132] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/@me/936625905902714912/1083187613193740320"]
+[2023-10-25 15:13:38.140] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 936625905902714912 between undefined and undefined. jump={\"messageId\":\"1083187613193740320\",\"flash\":true}"]
+[2023-10-25 15:13:38.656] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 51 messages for 936625905902714912 isBefore:false isAfter:false"]
+[2023-10-25 15:13:39.264] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/@me/936625905902714912/1083187613193740320"]
+[2023-10-25 15:13:39.276] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 936625905902714912 between undefined and undefined. jump={\"messageId\":\"1083187613193740320\",\"flash\":true}"]
+[2023-10-25 15:13:45.043] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 936625905902714912 between undefined and 1083210170403930123. jump=undefined"]
+[2023-10-25 15:13:45.219] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 936625905902714912 isBefore:false isAfter:true"]
+[2023-10-25 15:14:34.753] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 936625905902714912 between undefined and undefined. jump={\"present\":true}"]
+[2023-10-25 15:14:35.423] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 936625905902714912 isBefore:false isAfter:false"]
+[2023-10-25 15:14:40.821] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","Replacing route with /channels/@me"]
+[2023-10-25 15:14:40.855] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/@me"]
+[2023-10-25 15:34:01.349] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/1127802007709822986/1127802008158621738"]
+[2023-10-25 15:34:04.468] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/1127802007709822986/1127941809042096228"]
+[2023-10-25 15:34:08.608] [1845] (discord.cpp:744): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","[object Object]"]
+[2023-10-25 16:16:22.964] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/@me/1009586209925902367"]
+[2023-10-25 16:16:23.007] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 1009586209925902367 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-10-25 16:16:23.657] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 1009586209925902367 isBefore:false isAfter:false"]
+[2023-10-25 16:16:29.508] [1845] (discord.cpp:744): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","[object Object]"]
+[2023-10-25 16:16:33.911] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","Replacing route with /channels/@me"]
+[2023-10-25 16:16:33.993] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/@me"]
+[2023-10-25 16:19:40.755] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/1164739541681307699/1164739542151077890"]
+[2023-10-25 16:19:50.161] [1845] (discord.cpp:744): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","[object Object]"]
+[2023-10-25 16:19:57.394] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/1127802007709822986/1127941809042096228"]
+[2023-10-25 16:20:02.979] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/1164739541681307699/1164739542151077890"]
+[2023-10-25 16:20:34.350] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionToGuild - Transitioning to {\"guildId\":\"1164739541681307699\",\"channelId\":\"1166833703771709581\"}"]
+[2023-10-25 16:20:34.350] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/1164739541681307699/1166833703771709581"]
+[2023-10-25 16:20:34.357] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 1166833703771709581 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-10-25 16:20:34.712] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 0 messages for 1166833703771709581 isBefore:false isAfter:false"]
+[2023-10-25 16:20:34.765] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","Replacing route with /channels/1164739541681307699/1166833703771709581"]
+[2023-10-25 16:20:38.939] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/1127802007709822986/1127941809042096228"]
+[2023-10-25 16:20:41.712] [1845] (discord.cpp:744): JS console: ["Unable to determine render window for element","[object HTMLDocument]"]
+[2023-10-25 16:20:41.791] [1845] (discord.cpp:744): JS console: ["Unable to determine render window for element","[object HTMLDocument]"]
+[2023-10-25 16:20:41.825] [1845] (discord.cpp:744): JS console: ["Unable to determine render window for element","[object HTMLDocument]"]
+[2023-10-25 16:20:42.028] [1845] (discord.cpp:744): JS console: ["Unable to determine render window for element","[object HTMLDocument]"]
+[2023-10-25 16:20:42.038] [1845] (discord.cpp:744): JS console: ["Unable to determine render window for element","[object HTMLDocument]"]
+[2023-10-25 16:20:42.196] [1845] (discord.cpp:744): JS console: ["Unable to determine render window for element","[object HTMLDocument]"]
+[2023-10-25 16:20:45.926] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/1164739541681307699/1166833703771709581"]
+[2023-10-25 16:20:47.704] [1845] (discord.cpp:744): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","[object Object]"]
+[2023-10-25 16:20:52.819] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 725471944199372820 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-10-25 16:20:53.135] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 725471944199372820 isBefore:false isAfter:false"]
+[2023-10-25 16:21:20.074] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","Replacing route with /channels/@me"]
+[2023-10-25 16:21:20.115] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/@me"]
+[2023-10-25 16:21:21.224] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/1164739541681307699/1166833703771709581"]
+[2023-10-25 16:22:49.491] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/1164739541681307699/1164739542151077889"]
+[2023-10-25 16:23:14.364] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 725471944199372820 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-10-25 16:23:14.698] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 725471944199372820 isBefore:false isAfter:false"]
+[2023-10-25 16:23:18.281] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 1152994481805733908 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-10-25 16:23:18.604] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 15 messages for 1152994481805733908 isBefore:false isAfter:false"]
+[2023-10-25 16:23:22.835] [1845] (discord.cpp:744): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","[object Object]"]
+[2023-10-25 16:23:41.704] [1845] (discord.cpp:744): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","[object Object]"]
+[2023-10-25 16:24:12.848] [1845] (discord.cpp:744): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","[object Object]"]
+[2023-10-25 16:24:17.988] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","Replacing route with /channels/@me"]
+[2023-10-25 16:24:18.034] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/@me"]
+[2023-10-25 16:24:21.485] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/1164739541681307699/1164739542151077889"]
+[2023-10-25 16:25:22.079] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 1152994481805733908 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-10-25 16:25:22.576] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 17 messages for 1152994481805733908 isBefore:false isAfter:false"]
+[2023-10-25 16:25:34.045] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:34.121] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:34.121] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:34.121] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:34.121] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:34.121] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:34.121] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:36.567] [1845] (discord.cpp:744): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","[object Object]"]
+[2023-10-25 16:25:39.043] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","Replacing route with /channels/@me"]
+[2023-10-25 16:25:39.082] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/@me"]
+[2023-10-25 16:25:49.534] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 1152994481805733908 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-10-25 16:25:49.703] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 19 messages for 1152994481805733908 isBefore:false isAfter:false"]
+[2023-10-25 16:25:55.538] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:55.604] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:55.604] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:55.604] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:55.604] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:55.604] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:55.604] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:57.218] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:57.245] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:57.319] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:57.319] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:57.320] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:57.320] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:57.320] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:57.320] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:57.419] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:57.419] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:57.419] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:57.419] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:57.741] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:57.741] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:57.741] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:57.741] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:57.742] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:57.742] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:57.742] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:57.919] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:57.919] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:57.919] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:57.919] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:57.920] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:57.920] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:58.198] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:58.199] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:58.286] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:58.286] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:58.287] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:58.287] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:58.287] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:58.287] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:58.427] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:58.427] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:58.427] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:58.428] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:58.428] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:58.428] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:58.789] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:58.789] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:58.789] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:58.790] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:58.790] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:58.790] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:58.790] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:58.790] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:58.791] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:59.049] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:59.049] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:59.049] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:59.049] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:59.049] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:59.282] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:59.282] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:59.282] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:59.282] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:59.282] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:59.449] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:59.449] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:59.589] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:59.589] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:59.589] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:59.825] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:59.825] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:59.825] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:59.825] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:59.942] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:59.942] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:59.943] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:59.943] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:59.943] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:59.943] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:25:59.943] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:00.095] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:00.361] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:00.361] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:00.444] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:00.556] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:00.556] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:00.556] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:00.668] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:00.808] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:00.882] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:00.882] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:00.882] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:01.029] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:01.029] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:01.029] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:01.029] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:01.029] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:01.030] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:01.030] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:01.030] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:01.030] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:01.175] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:01.497] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:01.497] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:01.498] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:01.498] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:01.498] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:01.498] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:01.498] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:01.498] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:01.600] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:01.600] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:01.667] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:01.708] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:02.432] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:02.432] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:02.432] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:02.432] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:02.432] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:02.433] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:02.434] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:02.434] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:02.434] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:02.866] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:02.866] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:02.867] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:02.867] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:02.868] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:02.868] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:03.126] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:03.126] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:03.126] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:03.126] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:03.126] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:03.126] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:03.126] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:03.126] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:03.517] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:03.544] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:03.579] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:03.579] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:03.579] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:03.618] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:04.102] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:04.161] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:04.161] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:04.233] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:06.020] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:06.948] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:06.988] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:07.020] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:07.162] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:07.548] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:07.591] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:07.616] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:07.688] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:08.697] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:10.321] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:10.321] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:10.351] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:10.377] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:10.400] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:10.847] [1845] (discord.cpp:744): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-10-25 16:26:16.604] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","Replacing route with /channels/@me"]
+[2023-10-25 16:26:16.619] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/@me"]
+[2023-10-25 16:28:58.620] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","Replacing route with /channels/@me"]
+[2023-10-25 16:28:58.637] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/@me"]
+[2023-10-25 16:29:00.012] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/1164739541681307699/1164739542151077889"]
+[2023-10-25 16:33:55.308] [1845] (discord.cpp:744): JS console: ["%c[ComponentDispatchUtils]","ComponentDispatch.subscribe: Attempting to add a duplicate listener","POPOUT_CLOSE"]
+[2023-10-25 16:33:57.729] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/@me/725471944199372820"]
+[2023-10-25 16:33:57.732] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetching messages for 725471944199372820 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-10-25 16:33:58.358] [1845] (discord.cpp:744): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 725471944199372820 isBefore:false isAfter:false"]
+[2023-10-25 16:34:10.368] [1845] (discord.cpp:744): JS console: ["%c[MessageQueue]","Draining Message Queue with: ","[object Object]"]
+[2023-10-25 16:34:21.170] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","Replacing route with /channels/@me"]
+[2023-10-25 16:34:21.183] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/@me"]
+[2023-10-25 16:34:22.559] [1845] (discord.cpp:744): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/1164739541681307699/1164739542151077889"]

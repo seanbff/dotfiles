@@ -1,0 +1,49 @@
+2023/10/24-22:55:22.507 6e3 Reusing MANIFEST /home/sl/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2023/10/24-22:55:22.508 6e3 Recovering log #1002
+2023/10/24-22:55:22.513 6e3 Reusing old log /home/sl/.config/discord/Local Storage/leveldb/001002.log 
+2023/10/24-22:56:24.506 74d Level-0 table #1006: started
+2023/10/24-22:56:24.535 74d Level-0 table #1006: 20598 bytes OK
+2023/10/24-22:56:24.537 74d Delete type=0 #1002
+2023/10/24-22:56:24.537 74d Compacting 4@0 + 2@1 files
+2023/10/24-22:56:24.679 74d Generated table #1007@0: 22 keys, 4017993 bytes
+2023/10/24-22:56:24.683 74d Generated table #1008@0: 56 keys, 66088 bytes
+2023/10/24-22:56:24.683 74d Compacted 4@0 + 2@1 files => 4084081 bytes
+2023/10/24-22:56:24.685 74d compacted to: files[ 0 2 1 0 0 0 0 ]
+2023/10/24-22:56:24.685 74d Delete type=2 #1006
+2023/10/24-22:56:24.685 74d Delete type=2 #998
+2023/10/24-22:56:24.685 74d Delete type=2 #994
+2023/10/24-22:56:24.685 74d Delete type=2 #1001
+2023/10/24-22:56:24.685 74d Delete type=2 #1003
+2023/10/24-22:56:24.685 74d Delete type=2 #995
+2023/10/24-23:40:58.595 74d Level-0 table #1010: started
+2023/10/24-23:40:58.656 74d Level-0 table #1010: 2071482 bytes OK
+2023/10/24-23:40:58.660 74d Delete type=0 #1005
+2023/10/25-00:18:22.009 b7e Level-0 table #1012: started
+2023/10/25-00:18:22.042 b7e Level-0 table #1012: 27386 bytes OK
+2023/10/25-00:18:22.045 b7e Delete type=0 #1009
+2023/10/25-00:18:52.384 b7e Level-0 table #1014: started
+2023/10/25-00:18:52.418 b7e Level-0 table #1014: 52807 bytes OK
+2023/10/25-00:18:52.420 b7e Delete type=0 #1011
+2023/10/25-01:39:49.403 1c9c Level-0 table #1016: started
+2023/10/25-01:39:49.408 1c9c Level-0 table #1016: 20982 bytes OK
+2023/10/25-01:39:49.414 1c9c Delete type=0 #1013
+2023/10/25-01:39:49.415 1c9c Compacting 4@0 + 2@1 files
+2023/10/25-01:39:49.549 1c9c Generated table #1017@0: 22 keys, 4018618 bytes
+2023/10/25-01:39:49.557 1c9c Generated table #1018@0: 56 keys, 65521 bytes
+2023/10/25-01:39:49.557 1c9c Compacted 4@0 + 2@1 files => 4084139 bytes
+2023/10/25-01:39:49.559 1c9c compacted to: files[ 0 2 1 0 0 0 0 ]
+2023/10/25-01:39:49.559 1c9c Delete type=2 #1007
+2023/10/25-01:39:49.559 1c9c Delete type=2 #1014
+2023/10/25-01:39:49.559 1c9c Delete type=2 #1008
+2023/10/25-01:39:49.559 1c9c Delete type=2 #1016
+2023/10/25-01:39:49.559 1c9c Delete type=2 #1010
+2023/10/25-01:39:49.559 1c9c Delete type=2 #1012
+2023/10/25-13:08:34.220 30da Level-0 table #1020: started
+2023/10/25-13:08:34.224 30da Level-0 table #1020: 25330 bytes OK
+2023/10/25-13:08:34.229 30da Delete type=0 #1015
+2023/10/25-16:20:32.731 33d1 Level-0 table #1022: started
+2023/10/25-16:20:32.735 33d1 Level-0 table #1022: 17784 bytes OK
+2023/10/25-16:20:32.742 33d1 Delete type=0 #1019
+2023/10/25-16:25:54.554 33d1 Level-0 table #1024: started
+2023/10/25-16:25:54.558 33d1 Level-0 table #1024: 19950 bytes OK
+2023/10/25-16:25:54.563 33d1 Delete type=0 #1021

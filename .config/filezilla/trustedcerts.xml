@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<FileZilla3 version="3.63.2.1" platform="*nix">
+	<InsecureHosts>
+		<Host Port="5000">192.168.1.162</Host>
+		<Host Port="7878">192.168.1.223</Host>
+	</InsecureHosts>
+</FileZilla3>
